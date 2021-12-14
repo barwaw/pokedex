@@ -49,7 +49,7 @@ function App() {
   };
 
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Route path="/" exact>
         <div className="App">
           <h1>Pokedex</h1>
